@@ -1,0 +1,12 @@
+.hero .hero-nav {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .hero-button {
+    width: 86px;
+    padding: 8px 0;
+    background: #3a2b58;
+}

@@ -1,0 +1,55 @@
+.doc-image {
+    height: 68px;
+    width: 78px;
+    border-radius: 12px;
+}
+
+.doc-section {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.doc-section .spacing-name {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.num-people {
+    position: relative;
+    bottom: 14px;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.icon-style {
+    color: #5d49db;
+    border: 1px solid #ddd9f7;
+    font-size: 40px;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: #ddd9f7;
+    margin-top: 24px;
+}
+
+.doc-rate-num {
+    border: 1px solid #4ad9c2;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-left: 1px;
+    margin-right: 6px;
+    color: #4ad9c2;
+}
+
+.type-of-doc {
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: gray;
+}
+
+.container-doctor {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}

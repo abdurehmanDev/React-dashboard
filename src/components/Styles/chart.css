@@ -1,0 +1,21 @@
+.contains {
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.drop {
+    border-style: none;
+    margin-right: 1.6rem;
+    color: gray;
+}
+
+.chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart-p {
+    padding-right: 0.8rem;
+    padding-bottom: 0.2rem;
+}
