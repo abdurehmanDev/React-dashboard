@@ -1,12 +1,14 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import UserLogin from './pages/UserLogin';
-import {ErrorBoundary} from 'react-error-boundary';
-//import Home from './pages/Home';
-//import UserAccount from './pages/UserAccount';
+import { ErrorBoundary } from 'react-error-boundary';
+import UserAccount from './pages/UserAccount';
+import Calendar from './pages/Calender';
+import Documents from './pages/Documents';
+import Files from './pages/Files';
+import Messages from './pages/Messages';
 
-
-function ErrorHandler({error}) {
+function ErrorHandler({ error }) {
   return (
     <div role="alert">
       <p>An error occurred:</p>
@@ -19,8 +21,15 @@ const App = () => {
   return (
     <ErrorBoundary FallbackComponent={ErrorHandler}>
       <Router>
-          <UserLogin/>
-        </Router>
+        <Routes>
+          <Route path="/" exact element={<UserLogin />} />
+          <Route path="userAccount" element={<UserAccount />} />
+          <Route path="calendar" element={<Calendar />} />
+          <Route path="documents" element={<Documents />} />
+          <Route path="files" element={<Files />} />
+          <Route path="message" element={<Messages />} />
+        </Routes>
+      </Router>
     </ErrorBoundary>
   );
 }

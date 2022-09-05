@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Home.css';
 
-
 function Home({ handleLogout, isLogin }) {
   const [state, setState] = useState(false);
 
