@@ -64,3 +64,17 @@
     border-radius: 1.4rem;
     border: none;
 }
+
+.pages-style {
+    padding: 60px;
+    margin: auto;
+    width: 100%;
+    max-width: 520px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #51459e;
+    font-size: 4rem;
+    color: white;
+}

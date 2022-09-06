@@ -7,6 +7,7 @@ import Calendar from './pages/Calender';
 import Documents from './pages/Documents';
 import Files from './pages/Files';
 import Messages from './pages/Messages';
+import NotFound from './pages/NotFound';
 
 function ErrorHandler({ error }) {
   return (
@@ -24,10 +25,11 @@ const App = () => {
         <Routes>
           <Route path="/" exact element={<UserLogin />} />
           <Route path="userAccount" element={<UserAccount />} />
-          <Route path="calendar" element={<Calendar />} />
+          <Route path="calender" element={<Calendar />} />
           <Route path="documents" element={<Documents />} />
           <Route path="files" element={<Files />} />
           <Route path="message" element={<Messages />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </ErrorBoundary>

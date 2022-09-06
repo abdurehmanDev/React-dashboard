@@ -2,7 +2,7 @@ import React from 'react'
 
 function Documents() {
   return (
-    <div>Documents</div>
+    <div className='pages-style'>Documents</div>
   )
 }
 

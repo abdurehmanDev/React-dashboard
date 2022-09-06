@@ -2,7 +2,7 @@ import React from 'react'
 
 function UserAccount() {
   return (
-    <div>UserAccount</div>
+    <div className='pages-style'>UserAccount</div>
   )
 }
 
