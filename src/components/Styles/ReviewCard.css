@@ -1,6 +1,5 @@
 .review-card {
     display: flex;
-    width: 92%;
     background-color: #ffad31;
     border-radius: 12px;
 }
@@ -24,8 +23,8 @@
 }
 
 .icon {
-    margin: 1rem;
     color: white;
+    margin-block: 1.12rem;
 }
 
 .link-tag {
@@ -64,4 +63,17 @@
 
 .twoStar-cont {
     background-color: #f24d57;
+}
+
+@media (max-width:576px) {
+    .review-icon {
+        padding: 2rem;
+        font-size: 34px;
+    }
+    .star-review {
+        font-size: 1rem!important;
+    }
+    .cont {
+        padding-left: unset;
+    }
 }

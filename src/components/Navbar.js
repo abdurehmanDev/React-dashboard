@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import { SidebarData } from '../data-folder/SidebarData';
 import './Styles/Navbar.css';
 import { IconContext } from 'react-icons';
+import {FiMenu} from 'react-icons/fi';
 
-function Navbar(props) {
+
+const Navbar = (props,{handleLogout}) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => {
@@ -17,8 +19,30 @@ function Navbar(props) {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-
-        <nav className={sidebar ? 'nav-menu' : 'nav-menu active'}>
+        <div className='nav-menu-sm'>
+       <div className='hero-nav nav-sm'>
+      <Link to='#' className={sidebar ? 'menu-sm' : 'menu-sm'}>
+                <FiMenu style={{
+                  color: 'white'
+                }} onClick={showSidebar} />
+              </Link>
+              <button className="hero-button" onClick={handleLogout}>Log out</button>
+              </div>
+          <nav className={sidebar ? 'nav-menu' : 'nav-menu active'}>
+          <ul className='nav-menu-items'>
+              {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName} value={{ color: 'wheat' }}>
+                  <Link to={item.path} className={(window.location.pathname === item.path) ? 'activeClass' : ''}>
+                    {item.icon}
+                  </Link>
+                </li>
+              );
+            })}
+            </ul>
+            </nav>
+            </div>
+        <nav className={sidebar ? 'nav-menu nav-menu-md' : 'nav-menu nav-menu-md active'}>
           <ul className='nav-menu-items'>
             <li className='navbar-toggle'>
               <Link to='#' className={sidebar ? 'menu-bars' : 'menu-bars m-rotate'}>

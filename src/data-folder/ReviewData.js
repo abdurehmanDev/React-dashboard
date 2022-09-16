@@ -6,13 +6,13 @@ export const reviewData = [
     { 
       numOfRate: '5.0',
       totalNumPeople : 260,
-      typeOfReview: 'positive reviews',
+      typeOfReview: 'Positive reviews',
       reactIcon: <BsEmojiLaughing/>
     },
     { 
       numOfRate: '2.0',
       totalNumPeople : 108,
-      typeOfReview: 'negative reviews',
+      typeOfReview: 'Negative reviews',
       reactIcon: <HiOutlineEmojiSad/>
     }
   ]

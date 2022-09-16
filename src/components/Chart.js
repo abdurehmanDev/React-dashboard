@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import './Styles/chart.css';
 
@@ -20,22 +19,22 @@ const Chart = () => {
   return (
 
     <Container className='contains'>
-      <Row className='chart-header'>
+      <div className='chart-header'>
         <header>
-          <h4 className='row-header spacing'>Appointments growth</h4>
+          <div className='row-header chart-head'>Appointments growth</div>
         </header>
-        <Col>
-          <select name="appointment" id="appoint" className='drop'>
+      
+          <select name="appointment" id="appoint" className='chart-select'>
             <option value="byDate">by days</option>
             <option value="byMonth">by months</option>
             <option value="byYear">by years</option>
           </select>
-        </Col>
-      </Row>
-      <Row className='chart-p'>
-        <Col>
-          <ResponsiveContainer width="98%" height={300} viewBox="8 0">
-            <BarChart data={data}>
+      
+      </div>
+      <div className=''>
+        <div>
+          <ResponsiveContainer width="100%" height={300} viewBox="8 0">
+            <BarChart data={data} className="chart-style">
               <CartesianGrid strokeDasharray="2" />
               <XAxis dataKey="date" />
               <YAxis />
@@ -43,9 +42,9 @@ const Chart = () => {
               <Bar dataKey="value" fill="#4ad9c2" />
             </BarChart>
           </ResponsiveContainer>
-        </Col>
+        </div>
 
-      </Row>
+      </div>
 
     </Container>
 

@@ -5,9 +5,9 @@ import { AiOutlineCalendar, AiOutlineFolder, AiOutlineFile } from 'react-icons/a
 
 export const SidebarData = [
   {
-    path: '/',
+    path: '/home',
     icon: <FiHome />,
-    cName: 'nav-text'
+    cName: 'nav-text home-icon'
   },
   {
     path: '/userAccount',

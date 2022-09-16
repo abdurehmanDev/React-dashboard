@@ -7,9 +7,10 @@ import DoctorsSec from '../components/DoctorsSec';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Hero from '../components/Hero';
 import './Home.css';
 
-function Home({ handleLogout, isLogin }) {
+function Home({ handleLogout }) {
   const [state, setState] = useState(false);
 
   const conToggle = () => {
@@ -18,28 +19,24 @@ function Home({ handleLogout, isLogin }) {
 
   return (
     <div className='home'>
-      <Navbar pass={conToggle} />
+      <Navbar pass={conToggle} handleLogout={handleLogout}/>
       <Container>
-      <section className="hero">
-        <nav className="hero-nav">
-          <h1>Performance Overview</h1>
-          <button className="hero-button" onClick={handleLogout}>Log out</button>
-        </nav>
-      </section>
-        <div className={state ? 'page-normal' : 'page-left'}>
-        <Row className='cont-row' xs={2}>
-          <Col xs lg="2" className='col-item1'>
+     
+        <div className={state ? 'page-normal  spacing' : 'page-left spacing'}>
+        <Hero handleLogout={handleLogout}/>
+        <Row>
+          <Col className='col-item' md={8}>
             <Chart />
           </Col>
-          <Col md="auto" className='col-item1'>
-            <Table />
+          <Col className='col-item' md={4}>
+          <Review />
           </Col>
         </Row>
-        <Row className='cont-row' xs={1}>
-          <Col md="auto" className='col-item2'>
-            <Review />
+        <Row>
+          <Col  className='col-item' md={8}>
+           <Table/>
           </Col>
-          <Col xs lg="2" className='col-item2 margin-top'>
+          <Col className='col-item' md={4}>
             <DoctorsSec />
           </Col>
         </Row>

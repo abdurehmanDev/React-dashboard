@@ -40,12 +40,6 @@ th {
     padding-right: 12px;
 }
 
-.row-header.spacing {
-    padding-left: 0.6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 .pName-icon {
     padding: 4px;
     color: white;
@@ -56,10 +50,6 @@ th {
     padding-right: 8px;
     margin-right: 6px;
     margin-left: 0;
-}
-
-.main-table {
-    margin: 10px;
 }
 
 .table-head {

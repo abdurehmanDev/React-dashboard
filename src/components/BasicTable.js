@@ -16,7 +16,7 @@ export function BasicTable() {
     <Container className='contains'>
 
       <header>
-        <h4 className='row-header spacing table-head'>New Appointments</h4>
+        <h4 className='row-header table-head'>New Appointments</h4>
       </header>
       <main className='main-table'>
         <TableContainer component={Paper}>

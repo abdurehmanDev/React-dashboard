@@ -1,21 +1,31 @@
 .contains {
     border: 1px solid gray;
     border-radius: 20px;
-}
-
-.drop {
-    border-style: none;
-    margin-right: 1.6rem;
-    color: gray;
+    padding: 1rem;
 }
 
 .chart-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 
-.chart-p {
-    padding-right: 0.8rem;
-    padding-bottom: 0.2rem;
+.chart-select {
+    border: none;
+    background: none;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: gray;
+}
+
+@media (max-width:576px) {
+    .chart-head {
+        padding-bottom: unset;
+    }
+}
+
+.chart-style {
+    position: unset!important;
 }

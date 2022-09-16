@@ -3,6 +3,7 @@ import firebaseApp from '../firebase'
 import Login from '../components/Login'
 import Home from  './Home.js';
 
+
 function UserLogin(){
   const [user, setUser] = useState(false)
   const [email, setEmail] = useState('')
@@ -84,11 +85,13 @@ function UserLogin(){
    authListener();
  }, [])
 
-  
+
+
+
   return (
     <div className="App">
     {user ?
-     ( <Home handleLogout={handleLogout} isLogin={user} />) :(
+     ( <Home handleLogout={handleLogout} isLogin={user}  path='Home'/>) :(
       <Login email={email} setEmail={setEmail} password={password} setPassword={setPassword} handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
       emailError={emailError} passwordError={passwordError} />
     )

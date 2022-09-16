@@ -35,11 +35,11 @@
     transition: 850ms;
     overflow-y: scroll;
     overflow-x: hidden;
+    transition: 350ms;
 }
 
 .nav-menu.active {
     left: 0;
-    transition: 350ms;
 }
 
 .nav-text {
@@ -76,10 +76,6 @@
     padding-bottom: 168px;
 }
 
-.row-header {
-    margin-left: 16px;
-}
-
 .nav-text-set a {
     position: fixed;
     bottom: 26px;
@@ -99,4 +95,34 @@
 .setting-spacing {
     padding-top: 10rem;
     padding-bottom: 3rem;
+}
+
+@media(max-width:576px) {
+    .nav-menu {
+        left: 0;
+        top: 66px;
+        position: absolute;
+        height: 300%;
+    }
+    .nav-menu-md {
+        display: none;
+    }
+    .nav-menu.active {
+        left: -100%;
+    }
+    .setting-spacing {
+        position: relative;
+        bottom: auto;
+        top: 74rem;
+    }
+    .home-icon {
+        margin-top: 2rem;
+    }
+    .nav-menu-sm {
+        display: block!important;
+    }
+}
+
+.nav-menu-sm {
+    display: none;
 }
