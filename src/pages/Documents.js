@@ -1,9 +1,16 @@
-import React from 'react'
 
-function Documents() {
+
+
+import React from 'react';
+
+
+
+const Documents = () => {
   return (
     <div className='pages-style'>Documents</div>
-  )
-}
+  );
+  }
 
-export default Documents
+
+
+export default Documents;
