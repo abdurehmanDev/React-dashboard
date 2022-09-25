@@ -17,8 +17,8 @@
 .menu-bars.m-rotate {
     transform: rotate(145deg);
     transition: 600ms;
-    padding-left: 16px;
-    padding-top: 16px;
+    padding-left: 14px;
+    padding-top: 8px;
     position: absolute;
 }
 
@@ -60,7 +60,7 @@
 
 .nav-text a:hover {
     background-color: rgb(173 173 184 / 82%);
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .nav-menu-items {
@@ -93,16 +93,15 @@
 }
 
 .setting-spacing {
-    padding-top: 10rem;
-    padding-bottom: 3rem;
+    padding-top: 8rem;
 }
 
 @media(max-width:576px) {
     .nav-menu {
         left: 0;
-        top: 66px;
+        top: 50px;
         position: absolute;
-        height: 300%;
+        height: 210%;
     }
     .nav-menu-md {
         display: none;
@@ -113,7 +112,6 @@
     .setting-spacing {
         position: relative;
         bottom: auto;
-        top: 74rem;
     }
     .home-icon {
         margin-top: 2rem;

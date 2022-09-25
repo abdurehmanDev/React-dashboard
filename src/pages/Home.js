@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
 import Chart from '../components/Chart';
 import { BasicTable as Table } from '../components/BasicTable';
 import Review from '../components/Review';
@@ -21,9 +21,8 @@ function Home({ handleLogout }) {
     <div className='home'>
       <Navbar pass={conToggle} handleLogout={handleLogout}/>
       <Container>
-     
         <div className={state ? 'page-normal  spacing' : 'page-left spacing'}>
-        <Hero handleLogout={handleLogout}/>
+        <Hero handleLogout={handleLogout} heroHeading="Performance Overiew"/>
         <Row>
           <Col className='col-item' md={8}>
             <Chart />

@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Messages() {
+
+
+
+const Messages = () => {
   return (
     <div className='pages-style'>Messages</div>
-  )
-}
+  );
+};
 
-export default Messages
+export default Messages;

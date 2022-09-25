@@ -91,7 +91,7 @@ function UserLogin(){
   return (
     <div className="App">
     {user ?
-     ( <Home handleLogout={handleLogout} isLogin={user}  path='Home'/>) :(
+     ( <Home handleLogout={handleLogout} isLogin={user}  path='home'/>) :(
       <Login email={email} setEmail={setEmail} password={password} setPassword={setPassword} handleLogin={handleLogin} handleSignup={handleSignup} hasAccount={hasAccount} setHasAccount={setHasAccount}
       emailError={emailError} passwordError={passwordError} />
     )

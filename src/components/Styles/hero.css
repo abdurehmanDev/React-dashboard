@@ -40,7 +40,10 @@
     .hero-button-log {
         padding: 0.5rem;
         font-size: 12px;
-        display: none;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        border: none;
     }
     .hero-button {
         padding-left: 1rem;
@@ -55,6 +58,6 @@
     .nav-sm {
         border: 1px solid #282A35;
         background-color: #51459e;
-        margin-block: 1rem;
+        margin-bottom: 1rem;
     }
 }

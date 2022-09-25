@@ -5,7 +5,7 @@ import { SidebarData } from '../data-folder/SidebarData';
 import './Styles/Navbar.css';
 import { IconContext } from 'react-icons';
 import {FiMenu} from 'react-icons/fi';
-
+//import Hero from './Hero';
 
 const Navbar = (props,{handleLogout}) => {
   const [sidebar, setSidebar] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = (props,{handleLogout}) => {
                   color: 'white'
                 }} onClick={showSidebar} />
               </Link>
-              <button className="hero-button" onClick={handleLogout}>Log out</button>
+           
               </div>
           <nav className={sidebar ? 'nav-menu' : 'nav-menu active'}>
           <ul className='nav-menu-items'>
